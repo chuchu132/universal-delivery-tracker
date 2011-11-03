@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, UDTMobile!</string>
+    <string name="app_name">UDT Mobile</string>
+    <string name="input_mail">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="user_data">Datos de Usuario</string>
+    <string name="register_button_text">Registrar</string>
+    <string name="login_button_text">Iniciar Sesión</string>
+    <string name="register_title">REGISTRO</string>
+    <string name="user_name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="acceptterms">Acepto Terminos y Condiciones</string>
+    <string name="home_tittle">HOME</string>
+    <string name="track_ticket">Rastrear Ticket</string>
+    <string name="track_family">Rastrear Familiar</string>
+    <string name="dondeestoy">¿ Donde estoy ?</string>
+    <string name="config">Configuracion</string>
+    <string name="dondeestoy_title">¿DONDE ESTOY?</string>
+</resources>
