@@ -21,7 +21,7 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 
-public class DondeEstoyActivity  extends MapActivity implements LocationListener{
+public class TrackFamilyActivity  extends MapActivity implements LocationListener{
 
 	MapView mapView;
 	MapController mapController;
@@ -33,7 +33,7 @@ public class DondeEstoyActivity  extends MapActivity implements LocationListener
 		super.onCreate(icicle);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
-	    setContentView(R.layout.dondeestoy);
+	    setContentView(R.layout.trackfamily);
 		mapView = (MapView) findViewById(R.id.mapview);
 		mapView.setBuiltInZoomControls(true);
 		mapView.setSatellite(true);
@@ -45,8 +45,6 @@ public class DondeEstoyActivity  extends MapActivity implements LocationListener
 		mapController.setCenter(point);
 		mapController.setZoom(18);
 
-
-		
 		
 	}
 	
