@@ -12,6 +12,7 @@ import android.widget.Button;
 public class HomeActivity extends Activity {
 
 	Button dondeEstoyButton;
+	Button trackFamilyButton;
 	
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
@@ -20,12 +21,17 @@ public class HomeActivity extends Activity {
 	    setContentView(R.layout.home);
 	    dondeEstoyButton = (Button) findViewById(R.id.dondeestoy);
 	    dondeEstoyButton.setOnClickListener(clicListener);
+	    trackFamilyButton = (Button) findViewById(R.id.trackFamilyButton);
+	    trackFamilyButton.setOnClickListener(clicListener);
 	}
 	
 	private final OnClickListener clicListener = new OnClickListener() {
 		public void onClick(View v) {
 			if(v== dondeEstoyButton){
 				Intent i = new Intent(HomeActivity.this, DondeEstoyActivity.class);
+				startActivity(i);
+			}else if( v==trackFamilyButton){
+				Intent i = new Intent(HomeActivity.this, TrackFamilyActivity.class);
 				startActivity(i);
 			}
 		}

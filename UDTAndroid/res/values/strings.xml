@@ -17,4 +17,7 @@
     <string name="dondeestoy">¿ Donde estoy ?</string>
     <string name="config">Configuracion</string>
     <string name="dondeestoy_title">¿DONDE ESTOY?</string>
+    <string name="track_family_title">RASTREAR FAMILIAR</string>
+    <string name="miembro">Familiar</string>
+    <string name="all_family">Todos</string>
 </resources>
