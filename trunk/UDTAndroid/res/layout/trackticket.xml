@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroud_title"
+    android:gravity="center" >
+
+<TextView
+    android:id="@+id/Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/tracktickettitle"
+    android:textColor="#ffffff"
+    android:textSize="30dip"
+    android:textStyle="bold"
+    android:typeface="sans" >
+
+</TextView>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/backgroud_puntos" android:gravity="center" android:padding="10px">
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:text="@string/ticketnumber"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="210px"
+            android:layout_height="fill_parent"
+            android:background="@drawable/backgroud_input" android:inputType="number" android:padding="5px" android:textColor="#000000" android:typeface="sans" android:textStyle="bold" android:textSize="15dip">
+
+            <requestFocus />
+        </EditText>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trackbutton" android:textStyle="bold" android:textColor="#ffffff" android:typeface="sans" android:background="@drawable/button_gris" android:padding="10px"/>
+
+    </LinearLayout>
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0zfRPHma80H4yaEhpKl_-48MBkQxMzVJOoFGk_A" 
+        android:layout_weight="1">
+    </com.google.android.maps.MapView>
+
+
+   <!-- 0zfRPHma80H4yaEhpKl_-48MBkQxMzVJOoFGk_A debug--> 
+  <!-- 0zfRPHma80H6teC_7b-L0-uurb8BebYH6TJtr7Q   AleAnroidKey-->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip" android:background="@drawable/backgroud_puntos">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:text="@string/latin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </ScrollView>
+
+</LinearLayout>

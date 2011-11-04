@@ -13,6 +13,7 @@ public class HomeActivity extends Activity {
 
 	Button dondeEstoyButton;
 	Button trackFamilyButton;
+	Button trackTicketButton;
 	
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
@@ -23,6 +24,8 @@ public class HomeActivity extends Activity {
 	    dondeEstoyButton.setOnClickListener(clicListener);
 	    trackFamilyButton = (Button) findViewById(R.id.trackFamilyButton);
 	    trackFamilyButton.setOnClickListener(clicListener);
+	    trackTicketButton = (Button) findViewById(R.id.trackTicketButton);
+	    trackTicketButton.setOnClickListener(clicListener);
 	}
 	
 	private final OnClickListener clicListener = new OnClickListener() {
@@ -32,6 +35,9 @@ public class HomeActivity extends Activity {
 				startActivity(i);
 			}else if( v==trackFamilyButton){
 				Intent i = new Intent(HomeActivity.this, TrackFamilyActivity.class);
+				startActivity(i);
+			}else if( v==trackTicketButton){
+				Intent i = new Intent(HomeActivity.this, TrackTicketActivity.class);
 				startActivity(i);
 			}
 		}
