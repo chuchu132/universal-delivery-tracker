@@ -35,12 +35,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/miembro" android:textColor="#ffffff" android:textSize="20dip" android:textStyle="bold" android:typeface="sans" android:layout_marginRight="10px" android:layout_marginLeft="10px"/>
-
+
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/spinnerFamilia"
             android:layout_width="210px"
             android:layout_height="62px"
-            android:background="@drawable/combo_bg"/>
+            android:background="@drawable/combo_bg" />
 
     </LinearLayout>
     
